@@ -1,0 +1,5 @@
+lib\ui\SearchPageObject.class
+lib\ui\MainPageObject.class
+lib\Platform.class
+lib\CoreTestCase.class
+lib\ui\ArticlePageObject.class

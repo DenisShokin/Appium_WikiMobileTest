@@ -1,0 +1,63 @@
+-------------------------------------------------------------------------------
+Test set: WikiTests
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 191.695 s <<< FAILURE! - in WikiTests
+testSearchJava(WikiTests)  Time elapsed: 32.293 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: Can not present element
+ (tried for 5 second(s) with 500 milliseconds interval)
+	at WikiTests.testSearchJava(WikiTests.java:13)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DQI1TV8', ip: '10.0.97.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: AndroidTestDevice, platformName: android, platformVersion: 6.0}, deviceApiLevel: 23, deviceManufacturer: Genymotion, deviceModel: Google, deviceName: 192.168.78.101:5555, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: 192.168.78.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: afe7f9ef-a142-45ad-8caf-7f9a3fcac4bf
+*** Element info: {Using=xpath, value=//*[contains(@text,'Search')]}
+	at WikiTests.testSearchJava(WikiTests.java:13)
+
+testCancelSearch(WikiTests)  Time elapsed: 63.372 s  <<< ERROR!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Timed out after 10000 milliseconds waiting for root AccessibilityNodeInfo
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DQI1TV8', ip: '10.0.97.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: AndroidTestDevice, platformName: android, platformVersion: 6.0}, deviceApiLevel: 23, deviceManufacturer: Genymotion, deviceModel: Google, deviceName: 192.168.78.101:5555, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: 192.168.78.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: 695d579e-e2e0-47bf-b53e-29fb8ef12358
+*** Element info: {Using=id, value=fragment_onboarding_skip_button}
+	at WikiTests.testCancelSearch(WikiTests.java:22)
+
+testCompareArticleTitle(WikiTests)  Time elapsed: 48.332 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: Can not find and click skip element
+ (tried for 20 second(s) with 500 milliseconds interval)
+	at WikiTests.testCompareArticleTitle(WikiTests.java:34)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DQI1TV8', ip: '10.0.97.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: AndroidTestDevice, platformName: android, platformVersion: 6.0}, deviceApiLevel: 23, deviceManufacturer: Genymotion, deviceModel: Google, deviceName: 192.168.78.101:5555, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: 192.168.78.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: ed043bf1-7fca-434d-9028-4ff399c864be
+*** Element info: {Using=id, value=fragment_onboarding_skip_button}
+	at WikiTests.testCompareArticleTitle(WikiTests.java:34)
+
+testSwipeArticle(WikiTests)  Time elapsed: 47.28 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: Can not find and click skip element
+ (tried for 20 second(s) with 500 milliseconds interval)
+	at WikiTests.testSwipeArticle(WikiTests.java:47)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-DQI1TV8', ip: '10.0.97.109', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, databaseEnabled: false, desired: {app: C:\Users\pc.DESKTOP-DQI1TV8..., appActivity: .main.MainActivity, appPackage: org.wikipedia, automationName: Appium, deviceName: AndroidTestDevice, platformName: android, platformVersion: 6.0}, deviceApiLevel: 23, deviceManufacturer: Genymotion, deviceModel: Google, deviceName: 192.168.78.101:5555, deviceScreenDensity: 560, deviceScreenSize: 1440x2560, deviceUDID: 192.168.78.101:5555, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 3.5, platform: LINUX, platformName: Android, platformVersion: 6.0, statBarHeight: 84, takesScreenshot: true, viewportRect: {height: 2308, left: 0, top: 84, width: 1440}, warnings: {}, webStorageEnabled: false}
+Session ID: c97b409c-e653-45aa-b1fa-f5de810bcba7
+*** Element info: {Using=id, value=fragment_onboarding_skip_button}
+	at WikiTests.testSwipeArticle(WikiTests.java:47)
+
